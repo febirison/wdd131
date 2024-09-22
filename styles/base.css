@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0a2749;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Navigation styles */
+nav ul li a {
+    /* Base styles */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: block;
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+  }
+  
+  /* Hover effects */
+  nav ul li a:hover {
+    background-color: #333; /* Change to your desired color */
+    color: #fff; /* Keep text color consistent */
+    transform: scale(1.05); /* Subtle enlargement for emphasis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+  }
+  
+ 
+  
+  nav ul li a:hover::before {
+    transform: scaleX(1);
+  }
+
+/* Main Content */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 900px;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #0a2749;
+    margin: 0 0 1rem;
+    border-bottom: 2px solid #0a2749;
+    padding-bottom: 0.5rem;
+}
+
+.card h3 {
+    text-align: center;
+    background-color: #0a2749; /* Change to your desired background color */
+  padding: 1rem; /* Add padding if needed */
+  color: #ffff;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.card ul li a {
+    color: #0a2749;
+    text-decoration: none;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
+
+.profile-img {
+    width: 100px;
+    border-radius: 0%;
+    margin-top: 0px;
+    
+}
+
+.flag-img {
+    width: 150px;
+    margin-top: 10px;
+    
+}
+
+.aboutme , .location { text-align: center;
+    
+}
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #0a2749;
+    color: white;
+    padding: 1rem;
+}
+
+#lastModified {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
