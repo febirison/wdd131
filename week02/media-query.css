@@ -29,3 +29,8 @@ body {
     font-display : swap;
     src : url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
     }
+
+    selector {
+        display: grid;
+        align-items: center;
+    }
