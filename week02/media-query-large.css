@@ -1,12 +1,13 @@
+/* Media query for larger screens */
 @media screen and (min-width: 500px) {
     header {
-      background-color: black;
-      color: white;
+      background-color: #000;
+      color: #fff;
     }
   
     main {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; /* Two columns of equal size */
     }
   }
   

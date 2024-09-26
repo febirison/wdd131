@@ -1,3 +1,4 @@
+/* Styling for mobile view */
 body {
     font-family: 'Roboto', sans-serif;
   }
@@ -7,7 +8,7 @@ body {
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: 1rem;
-    background-color: #e6f2ff;
+    background-color: #e6f2ff; /* Light blue background */
   }
   
   main {
@@ -18,6 +19,6 @@ body {
   
   section {
     padding: 1rem;
-    background-color: #fff;
+    background-color: #fff; /* White background for sections */
   }
   
