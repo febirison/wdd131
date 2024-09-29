@@ -30,7 +30,11 @@ body {
     src : url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
     }
 
-    selector {
+    .grid {
         display: grid;
         align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-gap: 10px; /* Optional gap between the grid items */
     }
+    
