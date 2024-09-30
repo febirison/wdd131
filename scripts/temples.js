@@ -1,12 +1,15 @@
-// Hamburger Menu Toggle
-const hamburgerBtn = document.getElementById('hamburgerBtn'); // Get the hamburger button element by its ID
-const navMenu = document.getElementById('navMenu'); // Get the navigation menu element by its ID
+let d = new Date();
+document.getElementById("currentYear").innerHTML = `&copy;${d.getFullYear()}`;
+document.querySelector('#lastModified').textContent = `Last Modification: ${document.lastModified}`;
 
-// Add a click event listener to the hamburger button
-hamburgerBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('hidden'); // Toggle the 'hidden' class on the navigation menu
+const hambutton = document.querySelector('#hambutton');
+
+hambutton.addEventListener('click', () => {
+  document.querySelector('h1').classList.toggle('show');
+  document.querySelector('#navmenu').classList.toggle('show');
+  hambutton.classList.toggle('show');
 });
 
-// Display Last Modified Date
-const lastModified = document.getElementById('lastModified'); // Get the last modified date element by its ID
-lastModified.textContent = document.lastModified; // Set the text content to the last modified date of the document
+function toggleActive(element) {
+  element.classList.toggle("active");
+}
