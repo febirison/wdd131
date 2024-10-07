@@ -104,3 +104,12 @@ h2 {
   border-radius: 1rem;
   background-color: var(--weather-bg);
 }
+
+footer::after {
+  content: " 🌍 Explore Ghana";
+  display: inline-block;
+  margin-left: 1rem;
+  font-family: "Poppins", system-ui;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
