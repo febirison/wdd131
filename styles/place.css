@@ -113,3 +113,10 @@ footer::after {
   font-size: 0.9rem;
   color: var(--text-color);
 }
+
+/* Show SVG weather icon only on mobile screens */
+@media screen and (max-width: 800px) {
+  .weather-icon {
+    display: block;
+  }
+}

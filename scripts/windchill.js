@@ -25,7 +25,7 @@ if (tempC <= 10 && speed > 4.8) {
 }
 
 // Update last modified date
-lastModified.textContent = document.lastModified;
+lastModified.textContent = new Date(document.lastModified).toLocaleString();
 
 // Get current year
 currentYear.textContent = new Date().getFullYear();
