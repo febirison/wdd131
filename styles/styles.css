@@ -72,7 +72,7 @@ textarea {
 .star-rating label:hover,
 .star-rating label:hover ~ label,
 .star-rating input:checked ~ label {
-    color: #ffca08;
+    color: #4C00FF;
 }
 
 .checkbox-group {
