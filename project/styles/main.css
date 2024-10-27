@@ -1,0 +1,234 @@
+/* styles/main.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --primary-dark-blue: #081827;
+    --secondary-dark-blue: #062a44;
+    --accent-blue: #0070ba;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--white);
+    background-color: var(--primary-dark-blue);
+}
+
+
+
+/* Header styles */
+header {
+    background-color: var(--secondary-dark-blue);
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-blue);
+}
+
+
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--accent-blue);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--accent-blue);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.cta-button, .learn-more {
+    display: inline-block;
+    background-color: var(--accent-blue);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover, .learn-more:hover {
+    background-color: #005a94;
+}
+
+/* Form styles */
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-dark-blue);
+    border-radius: 3px;
+    background-color: var(--white);
+    color: var(--primary-dark-blue);
+}
+
+button {
+    background-color: var(--accent-blue);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005a94;
+}
+
+/* Success stories styles */
+.story-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.featured-story {
+    flex: 0 0 300px;
+    background-color: var(--secondary-dark-blue);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.featured-story img {
+    width: 100%;
+    height: 30px;
+   
+}
+
+.story {
+    flex: 0 0 300px;
+    background-color: var(--secondary-dark-blue);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.story img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--secondary-dark-blue);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--white);
+    color: var(--primary-dark-blue);
+    padding: 2rem;
+    max-width: 90%;
+    width: 400px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-modal {
+    background-color: var(--accent-blue);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#guides a {
+    color: #ffffff;
+}
+
+#funding a {
+    color: #ffffff;
+}
+
+#webinars a {
+    color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 0.5rem;
+    }
+
+    .story-carousel {
+        flex-direction: column;
+    }
+
+    .story {
+        flex: 0 0 auto;
+    }
+}
