@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Success stories carousel
     const stories = [
-        { name: 'Sarah', title: 'Tech Startup Founder', image: '../images/success-stories/story1.jpg' },
-        { name: 'Michael', title: 'Social Entrepreneur', image: '../images/success-stories/story2.jpg' },
+        { name: 'Sahbu', title: 'Tech Startup Founder', image: '../images/success-stories/story1.jpg' },
+        { name: 'Aba', title: 'Social Entrepreneur', image: '../images/success-stories/story2.jpg' },
         { name: 'Aisha', title: 'AI Researcher', image: '../images/success-stories/story3.jpg' }
     ];
 
